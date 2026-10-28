@@ -1,0 +1,1 @@
+export default function NotFound(){return <main className="wrap section"><h1>Page not found / Page introuvable</h1><p>This address does not match a guide. / Cette adresse ne correspond à aucun guide.</p><div className="actions"><a className="btn navy" href="/en">ENGLISH HOME</a><a className="btn secondary" href="/fr">ACCUEIL FRANÇAIS</a></div></main>}
