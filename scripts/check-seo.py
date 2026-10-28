@@ -71,7 +71,7 @@ def check(url):
     for a in [g for g in graph if g['@type']=='Article']:
         assert a['citation'] and a['author']['name']=='PermanentResident.ca'
         assert p.ids.issuperset({'section-1','section-2'}),path
-        assert a['dateModified']=='2026-09-19'
+        assert a['dateModified']==('2026-10-28' if path.endswith('/pr-card/renewal') else '2026-09-19')
     return path,p.title,p.metas['description'],'Article' in types
 with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:results=list(pool.map(check,urls))
 for lang in ['en','fr']:
