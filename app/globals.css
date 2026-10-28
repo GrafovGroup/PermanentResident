@@ -66,3 +66,4 @@
 @media(max-width:950px){.renewal-options{grid-template-columns:1fr}.renewal-options article{padding:18px}}
 @media(max-width:680px){.journey-panel,.finder-intro,.enquiry-intro{padding:20px}.renewal-next .btn{width:100%}}
 .enquiry-reveal:focus{outline:none}
+.field select{display:block;width:100%;min-height:49px;padding:12px;border:1px solid #b7c7d3;border-radius:3px;margin-top:7px;font:400 1rem Arial;color:#10273f;background:#fff}
